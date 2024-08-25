@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap");
+
+header{
+    margin-top: 10px;    
+}
+
+body{
+    background: #07758c;
+}
+.container{
+    position: relative;
+    width: 95vw;
+    height: 95vh;
+    background: #07758c;
+}
+
+.logo{
+    position: absolute;
+    width: 6%;
+    height: 6%;
+    top: 2.5%;
+    left: 2.5%;
+}
+
+.texto{
+    position: absolute;
+    width: 42%;
+    height: 60%;
+    left: 16%;
+    top: 15%;
+    border: none;
+    font-family: "Happy Monkey", system-ui;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 150%;
+    background-color: #e4c38b;
+}
+
+.texto::placeholder{
+ color: #000000;
+}
+
+.texto:focus,
+.texto:active{
+    border: none;
+    outline: none;    
+}
+
+.condiciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+    position: absolute;
+    width: 80%;
+    left: 16%;
+    top: 81%;    
+}
+
+.condiciones p{
+    font-family: "Happy Monkey", system-ui;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: #e4cec1;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+ 
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; 
+    padding: 1% 0;
+    position: absolute;
+    width: 82%;
+    left: 16%;
+    top: 85%;
+    }
+
+.btn-Encriptar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #444444;
+    border-radius: 50px;
+    border: 2px solid #8b8787;
+    font-family: "Happy Monkey", system-ui;
+    font-size: 20px;
+    line-height: auto;
+    text-align: center;
+    color: #8b8787;    
+}
+
+.btn-Desencriptar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2%;
+    gap: 8px;
+    width: 25%;
+    background-color: #8b8787;
+    border: 2px solid #444444;
+    border-radius: 50px;
+    font-family: "Happy Monkey", system-ui;
+    font-size: 20px;
+    font-weight: 400;
+    color: #444444;
+    line-height: normal;
+    text-align: center;
+    margin-left: 24px;
+}
+
+.btn-Desencriptar:hover{
+    color: #8b8787;
+    background-color: #444444;
+    border: 2px solid #8b8787;
+    
+}
+
+.btn-Encriptar:hover{
+    color: #444444;
+    background-color: #8b8787;
+    border: 2px solid #444444
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 28%;
+    height: 90%;
+    left: 69%;
+    top: 5%;
+    background: #0cb6dc;
+    border-radius: 32px;
+}
+
+.snorlax{
+    position: absolute;
+    width: 85%;
+    height: 45%;
+    top: 0%;
+    left: 8%;
+    visibility: visible;
+}
+
+.mensajeEncriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
+    width: 84%;
+    top: 65%;
+    text-align: center;
+}
+
+.mensajeEncriptado h2{
+    width: 84%;
+    font-family: "Happy Monkey", system-ui;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    
+}
+
+.mensajeEncriptado p{
+    width: 84%;
+    font-family: "Happy Monkey", system-ui;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+
+.mensaje{
+    position: relative;
+    top: 95%;
+    width: 84%;
+    height: 75%;
+    font-family: "Happy Monkey", system-ui;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    background-color: #0cb6dc;
+    display: none; 
+}
+
+.btn-Copiar{    
+    position:absolute;    
+    top: 5%;
+    justify-content: center;
+    width: 80%;
+    padding: 6%;
+    background-color: #8b8787;
+    border: 2px solid #444444;
+    border-radius: 50px;
+    font-family: "Happy Monkey", system-ui;
+    font-size: 20px;
+    font-weight: 400;
+    color: #444444;
+    line-height: normal;
+    text-align: center;
+    margin-left: 24px;
+    visibility: hidden;
+}
+
+.btn-Copiar:hover {
+    color: #8b8787;
+    background-color: #444444;
+    border: 2px solid #8b8787
+}
+
+
+.footer{
+    position: relative;
+    top: 90%;
+    border: none;
+    font-family: "Happy Monkey", system-ui;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+    background: #f3f5fc;
+    background-color: #07758c;
+    color: #0A3871;
+    text-align: center;
+}
+
+@media (max-width: 57.5em){
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    } 
+    
+    .texto{
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;        
+    }
+    .condiciones{
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .condiciones p{
+        font-size: 16px;
+    }
+    .botones{
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btn-Encriptar{
+        display: inline-block;
+        width: 48%;
+        border-radius: 16px;
+    }
+    .btn-Desencriptar{
+        width: 48%;
+        border-radius: 16px;
+     }
+     .encriptado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+        
+    }
+    .mensajeEncriptado{
+        display: flex;
+        height: auto;
+        width: 100%;
+        top: 5%;        
+    }
+    .encriptado img{
+        top: 0%;
+        display: none;
+        visibility: hidden;
+    }
+    .container img {
+        display: flex;
+        top: 0%;
+        width: 12%;
+        height: 4%;
+        top: 1%;
+        left: 0%;
+            
+    }
+
+    .mensajeEncriptado h2 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+    .mensajeEncriptado p{
+        font-size: 16px;
+        font-style: normal ; 
+        font-weight: 700;
+        line-height: 150%;
+        text-align: center;
+        color: #495057;
+    }    
+
+    .btn-Copiar{    
+        margin: 0%;    
+        margin-top: 125px;
+        width: 48%;
+        height: auto;        
+        border-radius: 16px;
+        padding: 0%;
+    }
+    
+    .footer{
+        width: 100%;
+        top: 98%;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challengue ONE G7: Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>    
+    <div class="container">
+        <header><img src="images/Logo.png" alt="" class="logo" id="logo"></header>
+
+        <!-- OBTENCION DE TEXTO DEL USUARIO -->       
+        <div class="encriptar">
+            <textarea name="texto" class="texto" id="texto" placeholder="Ingrese el texto aqui" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- CONDICIONES DE CARACTERES PARA EL USO DEL PROGRAMA -->
+        <div class="condiciones">
+            <p>Solo letras minúsculas y sin acentos</p>
+        </div>
+
+        <!-- BOTONES DE ENCRIPTAR Y DESENCRIPTAR -->
+        <div class="botones">
+            <button class="btn-Encriptar" type="button" onclick="encriptar()">Encriptar</button>
+            <button class="btn-Desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+        </div>
+
+         <!-- AREA DONDE SE MUESTRA EL MENSAJE ENCRIPTADO -->
+
+        <div class="encriptado">
+            <img src="images/snorlax.png" id="snorlax" alt="" class="snorlax">
+            <button class="btn-Copiar" id="botonCopiar" type="button" onclick="copiar()">Copiar</button>           
+            <div class="mensajeEncriptado" id="mensajeEncriptado">
+                <textarea name="mensaje" id="mensaje" class="mensaje" cols="30" rows="10"></textarea>
+                <h2 id="tituloMensaje">Ningún mensaje fue encontrado</h2>
+                <p id="parrafo">Ingresa el texto que desees encriptar o desencriptar.</p>                                
+            </div>            
+        </div>        
+    </div>
+</body>
+<footer>
+    <div class="footer" id="footer">
+        <p>Desarrollado por Daniel Alarcón para el programa de formación ONE G7</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+
+</html>
